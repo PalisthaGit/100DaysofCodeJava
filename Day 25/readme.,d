@@ -1,0 +1,6 @@
+Create a basic class with attributes and methods.
+
+Create a User class with the following fields: id (int), firstname, lastname, email, city, country
+Add a constructor to initialise an User object
+Implement getters and setters to access User values
+Implement a getFullname() method to get fullname (i.e firstname + lastname) of the user
