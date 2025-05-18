@@ -19,4 +19,19 @@ class Instructor extends User2 {
         this.salary = salary;
     }
 
+    // incrementSalary with int percent as parameter and increment the salary by
+    // percentage
+    // incrementSalary with int percent and int bonus as parameters, and increment
+    // the salary
+    // by percentage and then add the bonus to salary
+    public void incrementSalary(int percent) {
+        double increment = salary * percent / 100.0;
+        this.salary += increment;
+    }
+
+    public void incrementSalary(int percent, int bonus) {
+        double increment = salary * percent / 100.0;
+        this.salary += increment + bonus;
+    }
+
 }
