@@ -11,6 +11,7 @@ public class Main {
 
         System.out.println(s1.registeredCourses);
         System.out.println(i.courseTaught);
+        System.out.println(i.getFullname());
 
     }
 }

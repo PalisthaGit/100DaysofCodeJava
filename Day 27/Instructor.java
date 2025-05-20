@@ -6,6 +6,8 @@
 // Implement constuctor that utilizes super keyword
 // Instantiate objects for both Instructor and Student class using above constructors
 
+import java.lang.reflect.Method;
+
 class Instructor extends User2 {
     String qualification;
     String courseTaught;
@@ -32,6 +34,18 @@ class Instructor extends User2 {
     public void incrementSalary(int percent, int bonus) {
         double increment = salary * percent / 100.0;
         this.salary += increment + bonus;
+    }
+    // In Java, the child class can also have the same
+    // method as the parent class. This is known as Method
+    // Overriding. Add the following method to the Instructor class:
+
+    // getFullname() method which returns the full
+    // name of the Instuctor along with a prefix "Prof."
+    // (i.e Prof. Firstname Lastname). This method overrides the
+    // getFullname method defined of the User class
+    @Override
+    public String getFullname() {
+        return "Prof. " + super.getFirstName() + " " + super.getLastName();
     }
 
 }
